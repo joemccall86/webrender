@@ -1,11 +1,8 @@
 extern crate yaml_rust;
 
-use app_units::Au;
 use image::{ColorType, save_buffer};
 use std::borrow::BorrowMut;
-use std::cell::Cell;
 use std::collections::HashMap;
-use std::collections::hash_map::Entry;
 use std::fs;
 use std::fs::File;
 use std::io::{Cursor, Read, Write};

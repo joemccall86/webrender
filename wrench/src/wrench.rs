@@ -9,12 +9,10 @@ use dwrote;
 use font_loader::system_fonts;
 
 use gleam::gl;
-use glutin;
-use glutin::{WindowProxy, ElementState, VirtualKeyCode};
+use glutin::{WindowProxy};
 use image;
 use image::GenericImage;
 use std::collections::HashMap;
-use std::ffi::CStr;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use webrender;
@@ -26,7 +24,7 @@ use time;
 use crossbeam::sync::chase_lev;
 use WindowWrapper;
 
-use {CURRENT_FRAME_NUMBER, WHITE_COLOR, BLACK_COLOR};
+use {WHITE_COLOR, BLACK_COLOR};
 
 pub enum SaveType {
     Yaml,
